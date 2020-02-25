@@ -1,0 +1,11 @@
+.container{
+    padding-top: 70px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+#chats{
+    background-color:#cfe0e8;
+    border: solid black;
+}
+
+

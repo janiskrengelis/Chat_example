@@ -4,24 +4,25 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Links to other files -->
-    <script src="{{ url_for('static', filename='chats.js') }}"></script>
-    <script src="{{ url_for('static', filename='chats.css') }}"></script>  
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Links to other files -->
+    <script src="{{ url_for('static', filename='chats.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chats.css') }}"/> 
 
     <title>Čats</title>
   </head>
   <body onload="lasiChatu();" class="body">
-    <div id='chats' class='col-8'>
+    <div class='container'>
+      <h1>RVT čats</h1>
+      <div id='chats' style="overflow-y: scroll; height:500px; width: auto;" >
 
+      </div>
+      <div>
+          <input id="zinja" placeholder="Type your message here" type="text">
+          <button onClick="suutiZinju();" type="button">Send</button>
+      </div>
     </div>
-    <div>
-        <input id="zinja" placeholder="Type your message here" type="text">
-        <button onClick="suutiZinju();" type="button">Send</button>
-    </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
